@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Dmitriy Ovsyannikov](https://up.htmlacademy.ru/htmlcss/17/user/424167).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
 
 ---
 
