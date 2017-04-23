@@ -19,12 +19,25 @@
 						<li><a href="#">О компании</a></li>
 					</ul>
 				</nav>
-				<div class="user-block">
-					<ul>
-						<li class="search"><a class="search-link"href="#">Поиск</a></li>
-						<li class="login"><a class="login-link" href="#">Вход</a></li>
-						<li class="bag"><a class="bag-link" href="#">Корзина</a></li>
-					</ul>
+				<div class="search">
+					<a class="search-link"href="#">Поиск</a>
+				</div>
+				<div class="login">
+					<div>
+						<a href="#">Вход</a>
+					</div>
+					<div>
+						<form action="#" method="post">
+							<input type="text" name="login" placeholder="Электронная почта">
+							<input type="password" name="password" placeholder="Пароль">
+							<button type="submit">Войти</button>
+							<a href="#" title="">Забыли пароль?</a>
+							<a href="#" title="">Новая регистрация</a>
+						</form>
+					</div>
+				</div>
+				<div class="bag">
+					<a class="bag-link" href="#">Корзина</a>
 				</div>
 				<div class="contacts-schedule">
 					<p>С 10 до 20, ежедневно</p>
@@ -35,40 +48,30 @@
 				<div class="slider">
 					<ul>
 						<li class="slider-item slider-item-active">
-							<div class="slider-item-text">
-								<h1>Крем-брюле и пломбир с малиновым джемом</h1>
-							</div>
-							<div class="slider-item-img">
-									<img src="http://placehold.it/150x100" width="150" height="100">
-							</div>
+							<h1 class="slider-item-text">Крем-брюле и пломбир с малиновым джемом</h1>
+							<div class="slider-item-img"></div>
+							<a href="#" title="">Давайте оба!</a>
 						</li>
 						<li class="slider-item">
-							<div class="slider-item-text">
-								<h1>Шоколадный пломбир и лимонный сорбет</h1>
-							</div>
-							<div class="slider-item-img">
-								<img src="http://placehold.it/150x100" width="150" height="100">
-							</div>
+							<h1 class="slider-item-text">Шоколадный пломбир и лимонный сорбет</h1>
+							<div class="slider-item-img"></div>
+							<a href="#" title="">Давайте оба!</a>
 						</li>
 						<li class="slider-item">
-							<div class="slider-item-text">
-								<h1>Пломбир с помадкой и клубничный щербет</h1>
-							</div>
-							<div class="slider-item-img">
-								<img src="http://placehold.it/150x100" width="150" height="100">
-							</div>
+							<h1 class="slider-item-text">Пломбир с помадкой и клубничный щербет</h1>
+							<div class="slider-item-img"></div>
+							<a href="#" title="">Давайте оба!</a>
 						</li>
 					</ul>
-					<div class="slider-nav">
+					<div class="toggles">
 						<ul>
-							<li class="slider-nav-item active"></li>
-							<li class="slider-nav-item"></li>
-							<li class="slider-nav-item"></li>
+							<li class="toggle active"></li>
+							<li class="toggle"></li>
+							<li class="toggle"></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<a href="#" title="">Давайте оба!</a>
 		<header>
 
 
@@ -79,21 +82,17 @@
 
 		<main>
 			<section class="banners">
-				<div class="banner-right">
-					<div class="banner-right-text">
-						<dl>	
-							<dt>Малинка даром!</dt>
-							<dd>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</dd>
-						</dl>
+				<div class="banner berry">
+					<div class="banner-text">
+						<p class="headline">Малинка даром!</p>
+						<p class="description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					</div>
 					<a href="#" title="">Хочу варенье!</a>
 				</div>
-				<div class="banner-left">
-					<div class="banner-left-text">
-						<dl>
-							<dt>Шоколадки даром!</dt>
-							<dd>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</dd>
-						</dl>
+				<div class="banner choco">
+					<div class="banner-text">
+						<p class="headline">Шоколадки даром!</p>
+						<p class="description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					</div>
 					<a href="#" title="">Хочу шоколадки!</a>
 				</div>
@@ -103,6 +102,8 @@
 					<div class="tops-item-images">
 						<img src="http://placehold.it/150x100" width="150" height="100">
 					</div>
+					<!-- знак рубля отобразить картинкой? -->
+					<div class="price">310<span class="ruble"></span>/кг</div> 
 					<div class="tops-item-desc">
 						Сливочное с апельсиновым джемом и цитрусовой стружкой
 					</div>
@@ -111,6 +112,7 @@
 					<div class="tops-item-images">
 						<img src="http://placehold.it/150x100" width="150" height="100">
 					</div>
+					<div class="price">380 <span class="ruble"></span>/кг</div>
 					<div class="tops-item-desc">
 						Сливочно-кофейное с кусочками шоколада
 					</div>
@@ -119,6 +121,7 @@
 					<div class="tops-item-images">
 						<img src="http://placehold.it/150x100" width="150" height="100">
 					</div>
+					<div class="price">355 <span class="ruble"></span>/кг</div>
 					<div class="tops-item-desc">
 						Сливочно-клубничное с присыпкой из белого шоколада
 					</div>
@@ -127,6 +130,7 @@
 					<div class="tops-item-images">
 						<img src="http://placehold.it/150x100" width="150" height="100">
 					</div>
+					<div class="price">415 <span class="ruble"></span>/кг</div>
 					<div class="tops-item-desc">
 						Сливочное крем-брюле с карамельной подливкой
 					</div>
@@ -135,7 +139,7 @@
 			<section class="features">
 				<h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
 				<ul>
-					<li>Все наше мороженое изготавливается на собственном производстве, с использованием совремнного оборудования и проверенных временем технологий.
+					<li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 					</li>
 					<li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
 					<li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговремнное сотрудничество.</li>
@@ -148,7 +152,7 @@
 					<a href="#" title="">10 способов сервировки фруктовых щербетов к столу</a>
 				</div>
 				<div class="subscription">
-					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form cation="#" method="post">
 						<input type="text" name="email">
 						<button type="submit">Отправить</button>
@@ -159,8 +163,8 @@
 				<div>
 					<img src="http://placehold.it/150x100" width="150" height="100">
 					<div class="feedback">
-						<p>Адрес главного офиса и офлайн магазина: <br> <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-						<p>Для заказов по телефону: <span>8 812 450-25-25</span> <br> (c 10 до 20 ежедневно)</p>
+						<p>Адрес главного офиса и офлайн магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+						<p>Для заказов по телефону: <span>8 812 450-25-25</span> (c 10 до 20 ежедневно)</p>
 						<a href="#" title="">Форма обратной связи</a>
 					</div>
 				</div>
@@ -182,16 +186,16 @@
 				</ul>
 			</div>
 			<div class="footer-info">
-				<span class="heart">Сердце</span> <b>Для поставщиков</b>
-				<a class="footer-info-link" href="#" title="">Наши документы</a><br>
+				<a class="footer-info-link heart" href="#" title="">Для поставщиков</a>
+				<a class="footer-info-link" href="#" title="">Наши документы</a>
 				<a class="footer-info-link" href="#" title="">О производстве</a>
 				<a class="footer-info-link" href="#" title="">Экологические стандарты</a>
 			</div>
 			<div class="footer-copyright">
-				<a href="https://htmlacademy.ru/" title="Разработка сайта" target="_blank">
+				<a href="https://htmlacademy.ru/intensive/htmlcss" title="Разработка сайта" target="_blank">
 					<img src="http://placehold.it/150x100" alt="Логотип htmlacademy.ru" width="150" height="100">
 				</a>
-				<p>Сделано в HTML Academy &copy; 2017</p>
+				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" title="">HTML Academy</a> &copy; 2017</p>
 			</div>
 		</footer>
 	</body>
