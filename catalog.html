@@ -43,8 +43,19 @@
 			<h1>Сливочное мороженое</h1>
 			<section class="sorting">
 				<form action="#" method="get">
-
-					<label>Цена:<input type="range" min="0" max="1000" value="5"></label>
+				<p>Сортировка:</p>
+				<select name="sorting">
+					<option value="popular">По популярности</option>
+					<option value="low">Сначала недорогие</option>
+					<option value="high">Сначала дорогие</option>
+					<option value="fat">По жирности</option>
+				</select>
+				<div class="range-price">
+					<p>Цена:</p>
+					<input type="range" min="0" max="1000" step="5">
+					<input type="range" min="0" max="1000" value="5">
+				</div>
+					
 					<fieldset>
 						<legend>Жирность:</legend>
 						<label><input type="radio" name="fat" value="=0">0%</label>
